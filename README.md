@@ -1,3 +1,3 @@
-# Estudo do Segundo Trimestre
-## Tema da Sala: Filmes (Cinema)
-Gabriella Picciani Fernandes- 13
+# Estudo segundo trimestre
+## Tema da Sala: Filmes (Cinema) 
+Gabriella Picciani Fernandes - n°13
