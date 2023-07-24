@@ -1,3 +1,4 @@
-# Estudo segundo trimestre
-## Tema da Sala: Filmes (Cinema) 
-Gabriella Picciani Fernandes - n°13 Gabriel ortela 
+# Estudo do Segundo Trimestre
+## Tema da Sala: Filmes (Cinema)
+### Responsáveis: Gabriella Picciani n13
+

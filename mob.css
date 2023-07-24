@@ -1,73 +1,66 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
+:root{
+    --cor-fundo: rgb(255, 0, 140);
+    --cor-fonte: rgb(250, 250, 250);
+    --cor-hover:  rgb(255, 0, 140);
 
-:root {
-    --fundo: #d1c2f3;
-    --cor-fonte: rgb(111, 111, 214);
-    --cor-hover: pink;
 }
-
-a {
-    text-decoration: none; 
+a{
+    text-decoration: none;
 }
-
-ul {
-    list-style: none;
+ul {    width: 100%;
+    height: 60px;
 }
 
 .header {
-    background-color: var(--cor-fundo);
-    position: sticky;
-    top: 0;
-    width: 100%;
+  background-color:var(--cor-fundo);
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
-
-.logo {
+.logo{
     display: inline;
-    background-color: var(--cor-fundo);
-}
+    background: var(--cor-fundo);
 
-.nav {
+}
+.nav{
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: var(--cor-fundo);
+    background: var(--cor-fundo);
     overflow: hidden;
 }
-
 .menu a {
     display: block;
-    padding: 30%;
-    color: var(--cor-fundo);
+    padding: 30px;
+    color: var(--cor-fonte);   
 }
+.menu a:hover{
+ background-color: var(--cor-hover);
 
-.menu a:hover {
-    background-color: var(--cor-hover);
 }
-
-.nav {
+.nav{
     max-height: 0;
     transition: max-height .5s ease-out;
 }
-
-.hanb {
+.hamb{
     cursor: pointer;
-    float: right;
+    float:right;
     padding: 35px 20px;
-}
 
-.hanb-line {
+}
+.hamb-line{
     background-color: var(--cor-fonte);
     display: block;
     height: 2px;
-    position: relative;
-    width: 23px;
+    position:relative;
+    width: 24px;
 }
-
-.hanb-line::before,
-.hanb-line::after{
+.hamb-line::before,
+.hamb-line::after{
     background-color: var(--cor-fonte);
     content: '';
     display: block;
@@ -76,55 +69,67 @@ ul {
     transition: all .2s ease-out;
     width: 100%;
 }
-
-.hanb-line::before {
+.hamb-line::before{
     top: 5px;
 }
-
-.hanb-line::after {
+.hamb-line::after{
     top: -5px;
 }
-
-.side-menu {
+.side-menu{
     display: none;
+}
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked~.hamb .hamb-line::before{
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+#logo {
+    width: 20%;
 }
 .conteudo {
     width: 100%;
-    background-color: rgb(155, 29, 81);
+    background-color: rgb(0, 238, 255);
 }
 
 .rodape {
-    background-color: #6f44d1;
+    background-color:rgb(255, 0, 140);
     width: 100%;
     text-align: center;
 }
-
 .info-cinema {
     width: 100%;
-    background-color: #7736b9;
+    background-color: rgb(250, 1, 76);
 }
-
-.info-filmes { 
+.info-filme {
     width: 100%;
-    background-color: rgb(202, 149, 202);
+    background-color: rgb(250, 1, 76);
 }
-
-.info-filmes-retro {
+.info-filme-retro {
     width: 100%;
-    background-color: #BE9DDF;
+    background-color:  rgb(250, 1, 76);
 }
-
+}
 .info-destaque {
     width: 100%;
-    background-color: rgb(202, 149, 202);
+    background-color:  rgb(250, 1, 76);
 }
-.imag-estilo{
+}
+.img-estilo {
     width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (mind-width: 768px) {
     .menu {
         height: 120px;
-        background-color: #3100a3;
+        background-color: rgb(250, 1, 76);
     }
     .conteudo {
         display: flex;
@@ -133,7 +138,7 @@ ul {
 @media screen and (min-width: 1028px) {
     .menu {
         height: 200px;
-        background-color: #d1c2f3;
+        background-color: rgb(250, 1, 76);
     }
     .conteudo {
         display: grid;
