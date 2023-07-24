@@ -1,3 +1,3 @@
 # Estudo segundo trimestre
 ## Tema da Sala: Filmes (Cinema) 
-Gabriella Picciani Fernandes - n°13
+Gabriella Picciani Fernandes - n°13 Gabriel ortela 
